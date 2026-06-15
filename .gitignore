@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environment
+myenv/
+venv/
+.env
+
+# Database
+db.sqlite3
+
+# Uploaded Images
+media/images/crop_predictions/
+media/images/user/
+
+# Dataset
+dataset/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
