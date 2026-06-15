@@ -262,7 +262,13 @@
                     {% for i in user %}
                     <tr>
                         <td>{{forloop.counter}}</td>
-                        <td><img src={{i.user_profile.url}} class="rounded-circle mr-3" alt="" style="width:50px;"></td>
+                       <td>
+    {% if i.user_profile %}
+        <img src="{{ i.user_profile.url }}" class="rounded-circle mr-3" alt="" style="width:50px;">
+    {% else %}
+        <span>No Image</span>
+    {% endif %}
+</td>
                         <td>{{i.user_name}}</td>
                         <td>{{i.user_email}}</td>
                         <td>
