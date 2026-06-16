@@ -14,10 +14,12 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     ".onrender.com",
+    ".hf.space",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.onrender.com",
+    "https://*.hf.space",
 ]
 
 INSTALLED_APPS = [
